@@ -1,0 +1,15 @@
+{
+"applinks": {
+"apps": [],
+"details": [
+{
+"appID": "9JA89QQLNQ.com.apple.wwdc",
+"paths": [ "/" ]
+},
+{
+"appID": "9JA89QQLNQ.it.credem.test",
+"paths": [ "*" ]
+}
+]
+}
+}
