@@ -13,7 +13,7 @@ const serverPort = process.env.PORT || 4444
 app.listen(serverPort, () => console.log(`Server listening to ${serverPort}`));
 
 setInterval(() => {
-    https.get('https://italeca.herokuapp.com/', (resp) => {
+    https.get('https://test-deeplink-memes.herokuapp.com/', (resp) => {
         resp.on('data', r => {
             console.log("Sending request to self.")
         });
