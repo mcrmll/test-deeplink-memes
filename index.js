@@ -1,3 +1,4 @@
+const serverPort = process.env.PORT || 4444
 var fs = require('fs'),
     http = require('http');
 
@@ -11,4 +12,4 @@ http.createServer(function (req, res) {
     res.writeHead(200);
     res.end(data);
   });
-}).listen(4444);
+}).listen(serverPort);
