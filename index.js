@@ -1,24 +1,14 @@
-const express = require('express');
-const app = express();
-const https = require('https');
-let fs = require('fs');
-fs.readFileSync('./apple-app-site-association')
+var fs = require('fs'),
+    http = require('http');
 
-app.get('/', (req,res) =>{
-    res.send("Universal Link!")
-})
-
-//set the port to listen to client connection and messages
-const serverPort = process.env.PORT || 4444
-app.listen(serverPort, () => console.log(`Server listening to ${serverPort}`));
-
-setInterval(() => {
-    https.get('https://test-deeplink-memes.herokuapp.com/', (resp) => {
-        resp.on('data', r => {
-            console.log("Sending request to self.")
-        });
-
-    }).on("error", (err) => {
-        console.log("Error: " + err.message);
-    });
-}, 1200000)
+http.createServer(function (req, res) {
+  fs.readFile(__dirname + req.url, function (err,data) {
+    if (err) {
+      res.writeHead(404);
+      res.end(JSON.stringify(err));
+      return;
+    }
+    res.writeHead(200);
+    res.end(data);
+  });
+}).listen(4444);
