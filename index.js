@@ -5,7 +5,7 @@ let fs = require('fs');
 fs.readFileSync('./apple-app-site-association')
 
 app.get('/', (req,res) =>{
-    res.send("Memes!")
+    res.send("Universal Link!")
 })
 
 //set the port to listen to client connection and messages
