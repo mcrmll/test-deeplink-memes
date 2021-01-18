@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "https-localhost": "^4.6.4",
     "node-deeplink": "^0.6.0"
   }
 }
