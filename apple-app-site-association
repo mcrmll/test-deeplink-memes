@@ -1,14 +1,10 @@
 {
     "applinks": {
         "apps": [],
-        "details": [
-            {
-                "appID": "FQN644ST36.it.credem.test",
-                "paths": [ "*" ]
+        "details": {
+            "FQN644ST36.it.credem.test": {
+                "paths": ["*"]
             }
-        ]
-    },
-    "webcredentials": {
-        "apps": [ "FQN644ST36.it.credem.test" ]
-     }
+        }
+    }
 }
