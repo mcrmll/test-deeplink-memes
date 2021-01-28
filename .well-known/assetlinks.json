@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.CredemMobile",
+      "sha256_cert_fingerprints":
+      ["BC:D9:5D:BB:1A:F8:C3:3D:4D:98:18:C5:DD:F6:9A:31:31:02:33:19:08:B3:9C:56:32:78:49:9C:02:30:4D:D3"]
+    }
+  }]

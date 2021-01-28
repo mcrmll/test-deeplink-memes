@@ -4,7 +4,7 @@
 		"details": [
 			{
 				"appID": "FQN644ST36.it.credem.test",
-				"paths": [ "*"]
+				"paths": ["*"]
 			}
 		]
 	}
