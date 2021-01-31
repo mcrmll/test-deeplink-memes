@@ -13,7 +13,7 @@ http
       if (req.url === "/.well-known/apple-app-site-association")
         res.setHeader("Content-Type", "application/pkcs7-mime");
 
-      if (req.url === "/.well-known/assetlinks")
+      if (req.url === "/.well-known/assetlinks.json")
         res.setHeader("Content-Type", "application/json");
       res.writeHead(200);
       res.end(data);
