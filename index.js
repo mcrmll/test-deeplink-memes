@@ -14,4 +14,4 @@ app.get("/chat", function(request, response){ //root dir
   response.sendFile('chat.html', {root: __dirname })
 });
 
-app.listen(serverPort, 'localhost');
+app.listen(serverPort);
